@@ -1,2 +1,1 @@
-# reviews-proxy
-proxy for reviews service
+# listing-reviews-proxy

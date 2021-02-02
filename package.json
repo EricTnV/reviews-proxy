@@ -1,0 +1,50 @@
+{
+  "name": "reviews-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "start:dev": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js,.jsx --ignore-pattern node_modules/ --ignore-pattern __tests__/ --ignore-pattern client/dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricTnV/reviews-proxy.git"
+  },
+  "keywords": [],
+  "author": "Jon Vanasse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricTnV/reviews-proxy/issues"
+  },
+  "homepage": "https://github.com/EricTnV/reviews-proxy#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es2021": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 12
+    },
+    "extends": [
+      "airbnb-base"
+    ],
+    "rules": {}
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
